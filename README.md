@@ -1,5 +1,7 @@
 # Fruta — Vitrine interativa de sabores
 
+![Demonstração real do projeto](docs/portfolio/vitrine-capa.png)
+
 Projeto demonstrativo de uma vitrine de refrigerantes. O visitante alterna entre Morango, Abacate e Laranja, com imagens, cores e textos de cada sabor.
 
 ## Abrir
