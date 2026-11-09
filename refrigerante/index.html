@@ -1,37 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Refrigerantes</title>
-</head>
-<body>
-    <main>
-        <div class="item active" style="--background: #EA3D41">
-            <div class="title">Morango</div>
-            <img src="./imagens/Morango-refrigerante-foregroundBlur.png" class="fruit">
-            <img src="./imagens/Morango-refrigerante.png" class="refri">
-        </div>
-
-<div class="item" style="--background: #2D5643">
-            <div class="title">Abacate</div>
-            <img src="./imagens/Abacate-refrigerante-foregroundBlur.png" class="fruit">
-            <img src="./imagens/Abacate-refrigerante.png" class="refri">
-            </div>
-
-            <div class="item" style="--background: #E7A043">
-            <div class="title">Laranja</div>
-            <img src="./imagens/Laranja-refrigerante-foregroundBlur.png" class="fruit">
-            <img src="./imagens/Laranja-refrigerante.png" class="refri">
-            </div>
-
-            <div class="arrow">
-                <button id="prev"> < </button>
-                <button id="next"> > </button>
-            </div>
-
-    </main>
-</body>
-<script src="./scripts.js"> </script>
-</html>
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Vitrine demonstrativa de refrigerantes com carrossel acessível e layout adaptado ao celular."><title>Fruta — Sabores em movimento</title><link rel="stylesheet" href="styles.css"><script src="scripts.js" defer></script></head>
+<body><header><a class="brand" href="#produtos">fruta<span>®</span></a><span class="edition">EXPERIMENTE O EXTRAORDINÁRIO</span><a class="about-link" href="#sobre">Sobre o projeto ↗</a></header>
+<main id="produtos" aria-label="Vitrine de sabores" aria-roledescription="carrossel" tabindex="0">
+<div class="item active" style="--background:#bc2445" role="group" aria-roledescription="slide" aria-label="1 de 3: Morango"><p class="kicker">UM NOVO SABOR PARA O SEU DIA</p><h1 class="title">Morango</h1><img src="imagens/Morango-refrigerante-foregroundBlur.png" class="fruit" alt="" aria-hidden="true"><img src="imagens/Morango-refrigerante.png" class="refri" alt="Lata de refrigerante sabor morango"><p class="flavor">Frutado. Vibrante. Fora do comum.</p></div>
+<div class="item" style="--background:#254d3a" role="group" aria-roledescription="slide" aria-label="2 de 3: Abacate" hidden><p class="kicker">UMA COMBINAÇÃO QUE SURPREENDE</p><h1 class="title">Abacate</h1><img src="imagens/Abacate-refrigerante-foregroundBlur.png" class="fruit" alt="" aria-hidden="true"><img src="imagens/Abacate-refrigerante.png" class="refri" alt="Lata de refrigerante sabor abacate"><p class="flavor">Original em cada detalhe.</p></div>
+<div class="item" style="--background:#9a4b13" role="group" aria-roledescription="slide" aria-label="3 de 3: Laranja" hidden><p class="kicker">O CLÁSSICO COM UMA NOVA ENERGIA</p><h1 class="title">Laranja</h1><img src="imagens/Laranja-refrigerante-foregroundBlur.png" class="fruit" alt="" aria-hidden="true"><img src="imagens/Laranja-refrigerante.png" class="refri" alt="Lata de refrigerante sabor laranja"><p class="flavor">Cítrico. Leve. Cheio de personalidade.</p></div>
+<button id="prev" class="arrow" aria-label="Sabor anterior">←</button><button id="next" class="arrow" aria-label="Próximo sabor">→</button><div class="controls"><span id="counter" aria-hidden="true">01 / 03</span><div class="dots" aria-label="Escolher sabor"><button aria-label="Mostrar Morango" aria-current="true" data-slide="0"></button><button aria-label="Mostrar Abacate" aria-current="false" data-slide="1"></button><button aria-label="Mostrar Laranja" aria-current="false" data-slide="2"></button></div><span class="hint">USE AS SETAS PARA EXPLORAR</span></div><p id="slide-status" class="sr-only" role="status" aria-live="polite">Sabor Morango, 1 de 3</p></main>
+<footer id="sobre"><b>Uma vitrine feita para explorar.</b><p>Projeto demonstrativo de interface web por Samir Gedeon. Marca fictícia, sem venda de produtos.</p><a href="#produtos">Voltar aos sabores ↑</a></footer></body></html>
